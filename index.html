@@ -1,0 +1,670 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>BAJA NITK RACING</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/logo.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicons -->
+
+
+
+    <style>
+        /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .smallfont{
+        font-size: 18px;
+      }
+      .large_font{
+        font-size: xx-large
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">BAJA NITK RACING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/events" tabindex="-1" aria-disabled="true">Events</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/gallery/LAB-SESSIONS/">LAB SESSIONS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/gallery/BAJA-SAE/">BAJA SAE</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/gallery/ENGI-21/">ENGI'21</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Another Event</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sponsors" tabindex="-1" aria-disabled="true">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/achievements" tabindex="-1" aria-disabled="true">Achievements</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <!-- <img class="bd-placeholder-img" width="100%" height="100%" src="static/img/home/car_1.jfif" width="100%" height="100%" style="object-fit: cover;"> -->
+        
+        <img class="bd-placeholder-img" width="100%" height="100%" src="static/img/6.jpg" width="100%" height="100%" style="object-fit: cover;">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>We are BAJA NITK!!!</h1>
+            <p>Click on the button below and take a look at the events we conduct.</p>
+            <p><a class="btn btn-lg btn-primary" href="/events/">Our Events</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+        <img class="bd-placeholder-img" width="100%" height="100%" src="static/img/home/car_2.jfif" width="100%" height="100%" style="object-fit: cover;">
+        <!-- <img class="bd-placeholder-img" width="100%" height="100%" src="static/img/2.jpg" width="100%" height="100%" style="object-fit: cover;"> -->
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Endurance Engineered!</h1>
+            <p>Click on the button below and meet our awesome Team(Family).</p>
+            <p><a class="btn btn-lg btn-primary" href="/team/">Team</a></p>
+          </div>
+        </div>  
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <img class="bd-placeholder-img" width="100%" height="100%" src="static/img/home/car_1.jfif" width="100%" height="100%" style="object-fit: cover;">
+        <!-- <img class="bd-placeholder-img" width="100%" height="100%" src="static/img/5.jpg" width="100%" height="100%" style="object-fit: cover;"> -->
+        cover
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Take a look at our awesome gallery!!!</p>
+            <p><a class="btn btn-lg btn-primary" href="/gallery/BAJA-SAE/">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <h1 class="text-center" style="margin-top:0">Our Subsystems</h1>
+  
+  <div class="container-fluid marketing">
+    <div class="row">
+      <div class="col-lg-4" >
+
+        <!-- <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="static/img/vd.png" style="border: 1px solid black;"> -->
+        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="static/img/vd_1.png" style="border: 1px solid black;">
+
+        <h2>Vehicle Dynamics</h2>
+        <p>A subsystem dedicated to making the rampaging beast under control - for design, analysis and optimization of the suspension, steering and brake aspects of the car. </p>
+        <p><a class="btn btn-secondary" href="/team">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+
+        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="static/img/pt.png" style="border: 1px solid black;"> 
+        <h2>Powertrain</h2>
+        <p>Giving our beast its power and life, this subsystem deals with fabricating and assembling components such as engine, drivetrains and more!</p>
+        <p><a class="btn btn-secondary" href="/team">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+
+        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="static/img/da_1.png" style="border: 1px solid black;">
+
+        <h2>Design & Analysis</h2>
+        <p>This team, dedicated to deriving the shape and ferocity of our beast, deals with design, analysis and development of the roll cage, knuckles, wheel hubs and more!</p>
+        <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+        <p><a class="btn btn-secondary" href=/team#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <!-- <hr class="featurette-divider"> -->
+    <hr>
+
+    <div class="row featurette">
+      <div class="col-md-7" style="height: max-content;
+      margin-top: 4%">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button large_font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                EFFICIENT, LIGHTEST, INBOARD BRAKE CALIPER
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul >
+                  <li class="lead smallfont" >The new single 13 reduction gearbox pairs well with our cvt to give a very efficient and powerful powertrain assembly</li>
+                  <li class="lead smallfont">The gearbox is the lightest we’ve made which includes a decrease in almost 30% from the last model and decreases the on uniform loading in the car chassis for optimal performance.</li>
+                  <li class="lead smallfont">The gearbox also has an inboard brake caliper mount to minimize welds to the chassis for mounts. The assembly decreases the unsprung mass by 20kgs.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h2 class="featurette-heading">EFFICIENT, LIGHTEST, INBOARD BRAKE CALIPER</h2>
+        
+        <ul >
+            <li class="lead smallfont" >The new single 13 reduction gearbox pairs well with our cvt to give a very efficient and powerful powertrain assembly</li>
+            <li class="lead smallfont">The gearbox is the lightest we’ve made which includes a decrease in almost 30% from the last model and decreases the on uniform loading in the car chassis for optimal performance.</li>
+            <li class="lead smallfont">The gearbox also has an inboard brake caliper mount to minimize welds to the chassis for mounts. The assembly decreases the unsprung mass by 20kgs.</li>
+        </ul> -->
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src = "static/img/home/gear_1.png">
+
+      </div>
+    </div>
+
+   <!-- <hr class="featurette-divider"> -->
+   <hr>
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-2" style="height: max-content;
+      margin-top: 4%">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button large_font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <!-- LIGHTER,ALUMINIUM 7075,RESISTANT -->
+                STEEL AISI 4130,RESISTANT,SAFE
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <!-- <li class="lead smallfont">After an extensive cycle of design and analysis, the wheel hub assembly is 25% lighter and the least FOS has increased from 1.9 to 2.3.</li>
+                  <li class="lead smallfont">The use of aerospace grade aluminium helps us decrease the overall mass of the wheel assembly by 5kgs.</li>
+                  <li class="lead smallfont">The assembly is also less susceptible to damage and interference.</li> -->
+                  <li class="lead smallfont">The use of low-alloy steel containing chromium and molybdenum as strengthening agents helped us create a frame with good strength and toughness. </li>
+                  <li class="lead smallfont">The assembly is also less susceptible to damage and interference.</li>
+                  <li class="lead smallfont">After extensive tests and simulations, the lowest FOS was determined to be an impressive 1.5 in the final approved design.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h2 class="featurette-heading">LIGHTER,ALUMINIUM 7075,RESISTANT</h2>
+        
+        <ul>
+            <li class="lead smallfont">After an extensive cycle of design and analysis, the wheel hub assembly is 25% lighter and the least FOS has increased from 1.9 to 2.3.</li>
+            <li class="lead smallfont">The use of aerospace grade aluminium helps us decrease the overall mass of the wheel assembly by 5kgs.</li>
+            <li class="lead smallfont">The assembly is also less susceptible to damage and interference.</li>
+        </ul> -->
+      </div>
+      <div class="col-md-4 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src = "static/img/home/tyre_1 (1).png">
+
+      </div>
+    </div>
+
+   <!-- <hr class="featurette-divider"> -->
+   <hr>
+
+    <div class="row featurette">
+      <div class="col-md-7" style="height: max-content;
+      margin-top: 4%">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button large_font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                AISI 4130, DESIGN IMPROVEMENTS, TABS FOR SUSPENSION SYSTEM
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li class="lead smallfont">The use of AISI 4130 has increased the least FOS on the chassis and has decreased the weight.</li>
+                  <li class="lead smallfont">The use of pipe bending and MIG welding has increased the overall design drastically.</li>
+                  <li class="lead smallfont">The manufacturing of tabs for the suspension system was meticulously done.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h2 class="featurette-heading">AISI 4130, DESIGN IMPROVEMENTS, TABS FOR SUSPENSION SYSTEM</h2>
+        <ul>
+            <li class="lead smallfont">The use of AISI 4130 has increased the least FOS on the chassis and has decreased the weight.</li>
+            <li class="lead smallfont">The use of pipe bending and MIG welding has increased the overall design drastically.</li>
+            <li class="lead smallfont">The manufacturing of tabs for the suspension system was meticulously done.</li>
+        </ul> -->
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src = "static/img/home/chassis_1.png">
+
+      </div>
+    </div>
+
+    <!-- <hr class="featurette-divider"> -->
+    <hr>
+
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2" style="height: max-content;
+      margin-top: 4%">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button large_font type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                FOX FLOAT 3 EVOL R, TWO AIR CHAMBERS, LIGHTER
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li class="lead smallfont">The use of the fox float 3 evol R which is an infinitely adjustable air spring brings great stability and performance to the car.</li>
+                  <li class="lead smallfont">The strut has two separate air chambers to control the ride and bottom-out/roll control.</li>
+                  <li class="lead smallfont">They are much lighter and responsive than their spring counterpart.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h2 class="featurette-heading">EFFICIENT, LIGHTEST, INBOARD BRAKE CALIPER</h2>
+
+        <ul>
+            <li class="lead smallfont">The new single 13 reduction gearbox pairs well with our cvt to give a very efficient and powerful powertrain assembly</li>
+            <li class="lead smallfont">The gearbox is the lightest we’ve made which includes a decrease in almost 30% from the last model and decreases the on uniform loading in the car chassis for optimal performance.</li>
+            <li class="lead smallfont">The gearbox also has an inboard brake caliper mount to minimize welds to the chassis for mounts. The assembly decreases the unsprung mass by 20kgs.</li>
+        </ul> -->
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src = "static/img/home/strut2.png">
+
+      </div>
+    </div>
+   <!-- <hr class="featurette-divider"> -->
+   <hr>
+    <!-- /END THE FEATURETTES -->
+    <h1 class="text-center" style="margin-top:0">ACHIEVMENTS</h1>
+    <p style="text-align:center"><b>Team BAJA NITK Racing has proved time and again that with the culmination of team's perseverance and hardwork anything can be achieved.
+      We are geared up to reach greater heights yet again!</b></p>
+    <section class="box-content box-1 box-style-1 ">
+      <div class="container">
+        <div class="row">
+              <img src="./static/img/team/achiev.jpg" style="border-style:solid; border-color:black; border-width:1vh;padding:0">
+        </div>
+  
+      </div>
+    </section>
+  
+    <section class="box-content box-1 box-style-1 my-4">
+      <div class="container">
+        <div class="row">
+              <img src="./static/img/team/achievement.jpg" style="border-style:solid; border-color:black; border-width:1vh;padding:0">
+        </div>
+  
+      </div>
+    </section>
+    
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+</main>
+<style>
+    a {
+  color: #6c757d;
+}
+
+a:hover {
+  color: #fec503;
+  text-decoration: none;
+}
+
+::selection {
+  background: #fec503;
+  text-shadow: none;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: #212529;
+}
+
+.footer-column:not(:first-child) {
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  .footer-column:not(:first-child) {
+    padding-top: 0rem;
+  }
+}
+
+.footer-column {
+  text-align: center;
+}
+.footer-column .nav-item .nav-link {
+  padding: 0.1rem 0;
+}
+.footer-column .nav-item span.nav-link {
+  color: #6c757d;
+}
+.footer-column .nav-item span.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-column .nav-item .fas {
+  margin-right: 0.5rem;
+}
+.footer-column ul {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .footer-column ul {
+    text-align: left;
+  }
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: #fec503;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  border-radius: 100%;
+  outline: 0;
+  background-color: #1a1d20;
+}
+
+footer .quick-links {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.copyright {
+  color: white;
+}
+
+.fa-ellipsis-h {
+  color: white;
+  padding: 2rem 0;
+}
+</style>
+<footer>
+    <div class="container text-light">
+      <div class="row">
+        <div class="col-md-4 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <h3 class="footer-title">LOCATION</h3>
+            </li>
+            <li class="nav-item">
+              <p>National Institute of Technology Karnataka, NH 66,</p>
+            </li>
+            <li class="nav-item">
+              <p>Srinivas Nagar, Surathkal, Mangaluru, Karnataka</p>
+            </li>
+            <li class="nav-item">
+              <p >575025</p>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+                <h3 class="footer-title">EMAIL</h3>
+            </li>
+            <li class="nav-item">
+                <a href="mailto:baja@nitk.edu.in" class="text-white" style="text-decoration:none"><i class="fa fa-envelope"></i> baja@nitk.edu.in</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+                <h3 class="footer-title">GET IN TOUCH</h3>
+            </li>
+            <li class="nav-item">
+                <p>DR.P.S.SUVIN (Faculty Advisor)</p>
+              <p><i class="fa fa-phone"></i> +91 8762785431</p>
+              <a href="mailto:suvin@nitk.edu.in" class="text-white" style="text-decoration:none"><i class="fa fa-envelope"></i> suvin@nitk.edu.in</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <p>PRASAD G.M. (Team Captain)</p>
+              <p><i class="fa fa-phone"></i> +91 89717369751</p>
+                <a href="mailto:prasadgmaladkar.191me159@nitk.edu.in" class="text-white" style="text-decoration:none"><i class="fa fa-envelope"></i> prasadgmaladkar.191me159@nitk.edu.in</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr>
+      
+      <div class="row text-center">
+        <div class="col-md-4 box">
+      
+        </div>
+        <div class="col-md-4 box">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/bajanitkracing/" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/BajaNITKRacing" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/baja-nitk-racing/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            </li>
+          </ul>
+          <span class="copyright quick-links">&#169; <script>document.write(new Date().getFullYear())</script> Copyright BAJA NITK <br>Designed by <a href="https://github.com/MBSA-INFINITY">Baja NITK'22 Web Team</a>
+          </span>
+        </div>
+        <div class="col-md-4 box">
+          <ul class="list-inline quick-links">
+            <!-- <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
